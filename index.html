@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Designer & Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">PORTFOLIO.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>I build digital products from <span class="highlight">pixel to production.</span></h1>
+            <p>Frontend Developer & Graphic Designer specialized in crafting visual identities and high-performance web
+                interfaces.</p>
+            <a href="#work" class="btn-primary">View My Work</a>
+        </div>
+    </section>
+
+    <section id="professional-details" class="details-grid reveal">
+        <div class="history-column">
+            <h2 class="section-title"><i data-lucide="graduation-cap"></i> Education</h2>
+            <div class="timeline-item">
+                <span class="date">2016 - 2021</span>
+                <h4>BSc in Engineering</h4>
+                <p>Olabisi Onabanjo University</p>
+            </div>
+
+            <h2 class="section-title"><i data-lucide="briefcase"></i> Experience</h2>
+            <div class="timeline-item">
+                <span class="date">2022 - Present</span>
+                <h4>IT Staff/ Graphics Designer</h4>
+                <p>Watercress Hotels • Full-time</p>
+                <small>Maintaining hotel's IT infrastructure (network, computers, printers).</small>
+                <small>Designing graphics for hotel marketing (posters, social media, menus).</small>
+            </div>
+            <div class="timeline-item">
+                <span class="date">2022 - 2024</span>
+                <h4>Intermideiate Graphic Designer</h4>
+                <p>Josbiz Technology • Partime</p>
+                <small>Created marketing assets and web wireframes.</small>
+            </div>
+        </div>
+
+        <div <section id="works" class="projects-section reveal">
+            <h2 class="section-title"><i data-lucide="layout"></i> Featured Frontend Projects</h2>
+
+            <div class="project-grid">
+                <div class="project-card" data-category="frontend">
+                    <div class="project-thumbnail">
+                        <img src="trading-app-ss.jpg" alt="AI Trading App">
+                        <div class="overlay">
+                            <div class="tech-tags">
+                                <span>React</span>
+                                <span>Python</span>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>AI Trading Dashboard</h3>
+                        <p>A real-time crypto tracking app with predictive AI analysis and Figma-to-Code implementation.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://your-live-link.com" target="_blank" class="btn-icon"><i
+                                    data-lucide="external-link"></i> Live Demo</a>
+                            <a href="https://github.com/your-username/repo" target="_blank" class="btn-icon"><i
+                                    data-lucide="github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="frontend">
+                    <div class="project-thumbnail">
+                        <img src="lyrics-app-ss.jpg" alt="Lyrics Finder">
+                        <div class="overlay">
+                            <div class="tech-tags">
+                                <span>Flask</span>
+                                <span>Genius API</span>
+                                <span>JS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Genius Lyrics Finder</h3>
+                        <p>A web app that fetches real-time lyrics and album art using the Genius API and Flask backend.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="btn-icon"><i data-lucide="external-link"></i> Live Demo</a>
+                            <a href="#" class="btn-icon"><i data-lucide="github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    </div>
+    </section>
+
+    <section class="skills-section">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span><i data-lucide="code-2"></i> React.js</span>
+                <span><i data-lucide="palette"></i> Figma</span>
+                <span><i data-lucide="layout"></i> UI/UX Design</span>
+                <span><i data-lucide="terminal"></i> TypeScript</span>
+                <span><i data-lucide="layers"></i> Adobe Suite</span>
+                <span><i data-lucide="component"></i> Tailwind CSS</span>
+                <span><i data-lucide="cpu"></i> Next.js</span>
+
+                <span><i data-lucide="code-2"></i> React.js</span>
+                <span><i data-lucide="palette"></i> Figma</span>
+                <span><i data-lucide="layout"></i> UI/UX Design</span>
+                <span><i data-lucide="terminal"></i> TypeScript</span>
+                <span><i data-lucide="layers"></i> Adobe Suite</span>
+                <span><i data-lucide="component"></i> Tailwind CSS</span>
+                <span><i data-lucide="cpu"></i> Next.js</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="portfolio">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="graphics">Graphics</button>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-card" data-category="frontend">
+                <div class="project-img" style="background: #1e1e1e;"></div>
+                <div class="project-info">
+                    <h3>E-Commerce Dashboard</h3>
+                    <p>React & Tailwind CSS</p>
+                </div>
+            </div>
+            <div class="project-card" data-category="graphics">
+                <div class="project-img" style="background: #2a2a2a;"></div>
+                <div class="project-info">
+                    <h3>Brand Identity: Luna</h3>
+                    <p>Logo & Visual Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="glass-card">
+            <h2>Let's Create Something <span class="highlight">Together</span></h2>
+            <form id="contact-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <textarea placeholder="Tell me about your project..." rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
