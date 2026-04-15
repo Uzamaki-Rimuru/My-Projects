@@ -782,3 +782,26 @@ header nav a:hover {
     background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
     margin-bottom: 20px;
 }
+
+.resume-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    color: #10b981;
+    /* A nice Emerald green */
+    border: 2px solid #10b981;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.resume-btn:hover {
+    background: #10b981;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+    transform: translateY(-3px);
+}
