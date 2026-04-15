@@ -48,3 +48,9 @@ window.addEventListener("scroll", reveal);
 
 // Run once on load to show elements already in view
 reveal();
+
+const glow = document.querySelector('.cursor-glow');
+window.addEventListener('mousemove', (e) => {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+});
