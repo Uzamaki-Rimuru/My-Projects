@@ -558,6 +558,30 @@ nav {
     overflow: hidden;
 }
 
+.project-card {
+    /* ... your existing code ... */
+    position: relative;
+    z-index: 1;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(99, 102, 241, 0.15), transparent 40%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
 /* Hover Effect: The Card Glows and Lifts */
 .project-card:hover {
     transform: translateY(-10px);
@@ -744,4 +768,17 @@ header nav a:hover {
     pointer-events: none;
     transform: translate(-50%, -50%);
     z-index: -1;
+}
+
+.main-footer {
+    padding: 40px 20px;
+    text-align: center;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.footer-line {
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+    margin-bottom: 20px;
 }

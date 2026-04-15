@@ -43,6 +43,34 @@ function reveal() {
     });
 }
 
+const textElement = document.querySelector(".typing-text");
+const words = ["Frontend Developer", "Graphic Designer", "UI/UX Enthusiast"];
+let wordIndex = 0;
+let charIndex = 0;
+
+function type() {
+    if (charIndex < words[wordIndex].length) {
+        textElement.textContent += words[wordIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, 100);
+    } else {
+        setTimeout(erase, 2000);
+    }
+}
+
+function erase() {
+    if (charIndex > 0) {
+        textElement.textContent = words[wordIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, 50);
+    } else {
+        wordIndex = (wordIndex + 1) % words.length;
+        setTimeout(type, 500);
+    }
+}
+
+type();
+
 // Run the function on scroll
 window.addEventListener("scroll", reveal);
 
