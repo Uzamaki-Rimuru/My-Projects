@@ -539,3 +539,126 @@ nav {
 .footer-link:hover {
     opacity: 1;
 }
+
+/* The Main Card Container */
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    /* Very light transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 2rem;
+    backdrop-filter: blur(12px);
+    /* This creates the glass effect */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect: The Card Glows and Lifts */
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Styling the Logo/Image */
+.card-image {
+    margin-bottom: 1.5rem;
+}
+
+.project-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Typography */
+.card-content h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    color: #a0a0a0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* The Buttons */
+.card-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.card-links a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn-live {
+    background: #fff;
+    color: #000;
+}
+
+.btn-code {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.btn-code:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Section Spacing */
+.section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+    border-left: 5px solid #6366f1;
+    /* That purple-blue accent */
+    padding-left: 15px;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+/* Contact Card Glassmorphism */
+.contact-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.contact-btn {
+    display: inline-block;
+    background: #6366f1;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 20px 0;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #4f46e5;
+    transform: scale(1.05);
+}
